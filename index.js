@@ -1,43 +1,21 @@
 
-var customerName = 'bob';
-
-
-function upperCaseCustomerName() {
-    customerName = customerName.toUpperCase();
+// Write your solution in this file!
+var customerName='bob';
+//function to uppercase
+function upperCaseCustomerName(){
+    customerName=customerName.toUpperCase();
 }
 
-
-function setBestCustomer() {
-    bestCustomer = 'not bob'; 
+function setBestCustomer(){
+    return  bestCustomer='not bob';
 }
-
-
-function overwriteBestCustomer() {
-    bestCustomer = 'maybe bob';
+function overwriteBestCustomer(){
+    return bestCustomer='maybe bob'
 }
+const leastFavoriteCustomer='John';
+function changeLeastFavoriteCustomer(){
 
-
-const leastFavoriteCustomer = 'someone';
-
-
-function changeLeastFavoriteCustomer() {
-    
-    leastFavoriteCustomer = 'someone else';
 }
-
-
-console.log(customerName); 
-upperCaseCustomerName();
-console.log(customerName); 
-
-setBestCustomer();
-console.log(bestCustomer); 
-overwriteBestCustomer();
-console.log(bestCustomer); 
-
-try {
-    changeLeastFavoriteCustomer(); 
-} catch (error) {
-    console.error("You cannot change a constant variable. Error: ", error.message);
+function changeLeastFavoriteCustomer(){
+    return leastFavoriteCustomer='Ben'
 }
-console.log(leastFavoriteCustomer); 
